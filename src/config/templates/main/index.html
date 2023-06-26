@@ -23,10 +23,19 @@
                         <li class="nav-item">
                            <a class="nav-link" href="/fronted/contacto">Contactos</a>
                         </li>
+
+
+
+
+
+                        
  
                             <input type="checkbox" id="btn-modal">
                             <label for="btn-modal" class="lbl-modal">SING IN</label>
                             <div class="modal">
+
+
+                             
                               
                                 <h3>
 
@@ -57,7 +66,7 @@
                                                </select>
                                                 <input id="email" type="text" placeholder="Correo Electronico">
                                                 <input id="pass" type="password" placeholder="Contraseña">
-                                                <button type="button" onclick="ingreso()">Entrar</button>
+                                                <button type="button" onclick="ingresos()">Entrar</button>
                                             </form>
 
                                             <!--Register-->
@@ -81,6 +90,8 @@
                                                 <input  type="text" id="telefono" placeholder="Telefono"> 
                                                 <button type="button" onclick="Guar_Clientes()">Regístrarse</button>
                                             </form>
+
+                                            
                                         </div>
                                     </div>
 
@@ -115,14 +126,14 @@
                <h2><span>Productos</span></h2>
             </div>
 
-            <div class="row">
+           <div class="row">
 
                <div class="col-sm-6 col-md-4 col-lg-4">
                   <div class="box">
                      <div class="option_container">
                         <div class="options">
                            
-                           <a href="" class="option2">Comprar Ahora </a>
+                           
                         </div>
                      </div>
                      <div class="img-box"><img src="{{url_for('static', filename='assets/images/Camisa.png')}}"alt=""></div>
@@ -139,7 +150,7 @@
                      <div class="option_container">
                         <div class="options">
                           
-                           <a href="" class="option2">Comprar Ahora</a>
+                           
                         </div>
                      </div>
                      <div class="img-box"><img src="{{url_for('static', filename='assets/images/Gorra.jpg')}}" alt=""></div>
@@ -156,7 +167,7 @@
                      <div class="option_container">
                         <div class="options">
                            
-                           <a href="" class="option2">Comprar Ahora</a>
+                           
                         </div>
                      </div>
                      <div class="img-box"><img src="{{url_for('static', filename='assets/images/Gafas gamer.jpg')}}" alt=""></div>
@@ -173,7 +184,7 @@
                      <div class="option_container">
                         <div class="options">
                            
-                           <a href="" class="option2">Comprar Ahora</a>
+                           
                         </div>
                      </div>
                      <div class="img-box">
@@ -192,7 +203,7 @@
                      <div class="option_container">
                         <div class="options">
                            
-                           <a href="" class="option2">Comprar Ahora</a>
+                          
                         </div>
                      </div>
                      <div class="img-box">
@@ -211,7 +222,7 @@
                      <div class="option_container">
                         <div class="options">
                            
-                           <a href="" class="option2">Comprar Ahora</a>
+                           
                         </div>
                      </div>
                      <div class="img-box">
@@ -230,7 +241,7 @@
                      <div class="option_container">
                         <div class="options">
                            
-                           <a href="" class="option2">Comprar Ahora</a>
+                           
                         </div>
                      </div>
                      <div class="img-box">
@@ -249,7 +260,7 @@
                      <div class="option_container">
                         <div class="options">
                            
-                           <a href="" class="option2">Comprar Ahora</a>
+                           
                         </div>
                      </div>
                      <div class="img-box">
@@ -268,7 +279,7 @@
                      <div class="option_container">
                         <div class="options">
                            
-                           <a href="" class="option2">Comprar Ahora</a>
+                           
                         </div>
                      </div>
                      <div class="img-box">
@@ -287,7 +298,7 @@
                      <div class="option_container">
                         <div class="options">
                            
-                           <a href="" class="option2">Comprar Ahora</a>
+                           
                         </div>
                      </div>
                      <div class="img-box">
@@ -306,7 +317,7 @@
                      <div class="option_container">
                         <div class="options">
                           
-                           <a href="" class="option2">Comprar Ahora</a>
+                           
                         </div>
                      </div>
                      <div class="img-box">
@@ -325,7 +336,7 @@
                      <div class="option_container">
                         <div class="options">
                            
-                           <a href="" class="option2">Comprar Ahora</a>
+                           
                         </div>
                      </div>
                      <div class="img-box">
@@ -338,20 +349,9 @@
                   </div>
                </div>
             </div>
-
-
-            
          </div>
       </section>
       
-      <!-- jQery -->
-      <script src="js/jquery-3.4.1.min.js"></script>
-      <!-- popper js -->
-      <script src="js/popper.min.js"></script>
-      <!-- bootstrap js -->
-      <script src="js/bootstrap.js"></script>
-      <!-- custom js -->
-      <script src="js/custom.js"></script>
 
-      <script src="{{url_for('static', filename='js/guardar/login.js')}}"></script>
+
 {% endblock %}

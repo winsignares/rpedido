@@ -16,19 +16,64 @@
                            <a class="nav-link" href="/fronted/index">Cerrar Sesion<span class="sr-only">(current)</span></a>
                         </li>
                        
-                        <li class="nav-item">
-                           <a class="nav-link" href="/fronted/productos">Productos</a>
+                        <li class="nav-item dropdown">
+                           <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true"> <span class="nav-label"> Categorias <span class="caret"></span></a>
+                           <ul class="dropdown-menu">
+                              <li><a href="/fronted/accesorios">Accesorios</a></li>
+                              <li><a href="/fronted/ropa">Ropa</a></li>
+                              <li><a href="/fronted/comida">Comida</a></li>
+                           </ul>
                         </li>
                         
                         <li class="nav-item">
                            <a class="nav-link" href="/fronted/contacto">Contactos</a>
                         </li>
 
+                      
+                              
+                           <div class="header-section container">
+                               
+                               <div>
+                                   <img onclick="showCart(this)" class="cart" src="{{url_for('static', filename='assets/images/cart.png')}}" alt="">
+                                   <p class="count-product">0</p>
+                               </div>
+                               <div class="cart-products" id="products-id">
+                                   <p class="close-btn" onclick="closeBtn()">X</p>
+                                   <h3>Mi carrito</h3>
+                                   <div class="card-items">
+                                       <!-- <div class="item">
+                                           <img src="./images/products/keyboard-1.jpg" alt="">
+                                           <div class="item-content">
+                                               <h5>name of product name of product name of product</h5>
+                                               <h5 class="cart-price">45.50$</h5>
+                                               <h6>Amount: 3</h6>
+                                           </div>
+                                           <span>X</span>
+                                       </div>
+                       
+                                       <div class="item">
+                                           <img src="./images/products/keyboard-1.jpg" alt="">
+                                           <div class="item-content">
+                                               <h5>name of product name of product name of product</h5>
+                                               <h5 class="cart-price">45.50$</h5>
+                                               <h6>Amount: 3</h6>
+                                           </div>
+                                           <span class="delete-product" data-id="">X</span>
+                                       </div> -->
+                                   </div>
+                                   <h2>Total: $<strong class="price-total">0</strong></h2>
+                                   
+                                   <a href=" " class ="btn-add-cart" data-id="2">Realizar Pedido</a>
+                               </div>
+                              
+                           </div>
+
+                        
                         
          </header>
          <!-- end header section -->
       
-      <!-- product section end product section -->
+      <!-- product section end product section 
       <section class="product_section layout_padding">
          <div class="container">
             <div class="heading_container heading_center">
@@ -41,7 +86,7 @@
                   <div class="box">
                      <div class="option_container">
                         <div class="options">
-                           <a href="" class="option1" onclick="compra()">Add To Cart</a>
+                           
                            <a href="" class="option2">Comprar Ahora </a>
                         </div>
                      </div>
@@ -58,7 +103,7 @@
                   <div class="box">
                      <div class="option_container">
                         <div class="options">
-                           <a href="" class="option1">Add To Cart</a>
+                           
                            <a href="" class="option2">Comprar Ahora</a>
                         </div>
                      </div>
@@ -75,7 +120,7 @@
                   <div class="box">
                      <div class="option_container">
                         <div class="options">
-                           <a href="" class="option1">Add To Cart</a>
+                           
                            <a href="" class="option2">Comprar Ahora</a>
                         </div>
                      </div>
@@ -92,7 +137,7 @@
                   <div class="box">
                      <div class="option_container">
                         <div class="options">
-                           <a href="" class="option1">Add To Cart</a>
+                          
                            <a href="" class="option2">Comprar Ahora</a>
                         </div>
                      </div>
@@ -111,7 +156,7 @@
                   <div class="box">
                      <div class="option_container">
                         <div class="options">
-                           <a href="" class="option1">Add To Cart</a>
+                           
                            <a href="" class="option2">Comprar Ahora</a>
                         </div>
                      </div>
@@ -130,7 +175,7 @@
                   <div class="box">
                      <div class="option_container">
                         <div class="options">
-                           <a href="" class="option1">Add To Cart</a>
+                         
                            <a href="" class="option2">Comprar Ahora</a>
                         </div>
                      </div>
@@ -149,7 +194,7 @@
                   <div class="box">
                      <div class="option_container">
                         <div class="options">
-                           <a href="" class="option1">Add To Cart</a>
+                         
                            <a href="" class="option2">Comprar Ahora</a>
                         </div>
                      </div>
@@ -168,7 +213,7 @@
                   <div class="box">
                      <div class="option_container">
                         <div class="options">
-                           <a href="" class="option1">Add To Cart</a>
+                           
                            <a href="" class="option2">Comprar Ahora</a>
                         </div>
                      </div>
@@ -187,7 +232,7 @@
                   <div class="box">
                      <div class="option_container">
                         <div class="options">
-                           <a href="" class="option1">Add To Cart</a>
+                           
                            <a href="" class="option2">Comprar Ahora</a>
                         </div>
                      </div>
@@ -206,7 +251,7 @@
                   <div class="box">
                      <div class="option_container">
                         <div class="options">
-                           <a href="" class="option1">Add To Cart</a>
+                           
                            <a href="" class="option2">Comprar Ahora</a>
                         </div>
                      </div>
@@ -225,7 +270,7 @@
                   <div class="box">
                      <div class="option_container">
                         <div class="options">
-                          <a href="" class="option1">Add To Cart</a>
+                          
                            <a href="" class="option2">Comprar Ahora</a>
                         </div>
                      </div>
@@ -244,7 +289,7 @@
                   <div class="box">
                      <div class="option_container">
                         <div class="options">
-                           <a href="" class="option1">Add To Cart</a>
+                           
                            <a href="" class="option2">Comprar Ahora</a>
                         </div>
                      </div>
@@ -258,25 +303,119 @@
                   </div>
                </div>
             </div>
-
-
-            <div class="btn-box">
-               <a href="/fronted/productos">
-               View All products
-               </a>
+         -->
+         <section class="container">
+            <div class="products">
+                <div class="carts">
+                  <div class="img-box">
+                     <img src="{{url_for('static', filename='assets/images/Parkas.jpg')}}" alt="">
+                     <p><span>35</span>$</p>
+                  </div>
+                    <p class="title">Parkas Masculino</p>
+                    <a href="" data-id="1" class="btn-add-cart">Agregar</a>
+                </div>
+                <div class="carts">
+                  <div class="img-box">
+                     <img src="{{url_for('static', filename='assets/images/Zapatos.jpg')}}" alt="">
+                     <p><span>35</span>$</p>
+                  </div>
+                    <p class="title"> Zapatos Masculino</p>
+                    <a href="" class="btn-add-cart" data-id="2">Agregar</a>
+                </div>
+                <div class="carts">
+                    <div>
+                        <img src="{{url_for('static', filename='assets/images/RelojIn.jpg')}}" alt="">
+                        <p><span>15.50</span>$</p>
+                    </div>
+                    <p class="title"> Reloj Inteligente</p>
+                    <a href="" data-id="3" class="btn-add-cart">Agregar</a>
+                </div>
+                <div class="carts">
+                    <div>
+                        <img src="{{url_for('static', filename='assets/images/RelojI.jpg')}}" alt="">
+                        <p><span>20.20</span>$</p>
+                    </div>
+                    <p class="title"> Reloj Invicta</p>
+                    <a href="" data-id="4" class="btn-add-cart">Agregar</a>
+                </div>
+                <div class="carts">
+                    <div>
+                        <img src="{{url_for('static', filename='assets/images/GorraNY.jpg')}}" alt="">
+                        <p><span>19</span>$</p>
+                    </div>
+                    <p class="title">Gorra NY</p>
+                    <a href="" data-id="5" class="btn-add-cart">Agregar</a>
+                </div>
+                <div class="carts">
+                    <div>
+                        <img src="{{url_for('static', filename='assets/images/Chaqueta.jpg')}}" alt="">
+                        <p><span>45</span>$</p>
+                    </div>
+                    <p class="title">Chaqueta</p>
+                    <a href="" data-id="6" class="btn-add-cart">Agregar</a>
+                </div>
+                <div class="carts">
+                    <div>
+                        <img src="{{url_for('static', filename='assets/images/Gafas gamer.jpg')}}" alt="">
+                        <p><span>23.99</span>$</p>
+                    </div>
+                    <p class="title">Gafas gamer</p>
+                    <a href="" data-id="7" class="btn-add-cart">Agregar</a>
+                </div>
+                <div class="carts">
+                    <div>
+                        <img src="{{url_for('static', filename='assets/images/Anillo.jpg')}}" alt="">
+                        <p><span>50</span>$</p>
+                    </div>
+                    <p class="title">Anillo</p>
+                    <a href="" data-id="8" class="btn-add-cart">Agregar</a>
+                </div>
+                <div class="carts">
+                    <div>
+                        <img src="{{url_for('static', filename='assets/images/Gorra.jpg')}}" alt="">
+                        <p><span>16</span>$</p>
+                    </div>
+                    <p class="title">Gorra Monastery</p>
+                    <a href="" data-id="9" class="btn-add-cart">Agregar</a>
+                </div>
+                <div class="carts">
+                    <div>
+                        <img src="{{url_for('static', filename='assets/images/Perros.jpg')}}" alt="">
+                        <p><span>17.50</span>$</p>
+                    </div>
+                    <p class="title">Perros</p>
+                    <a href="" data-id="10" class="btn-add-cart">Agregar</a>
+                </div>
+                <div class="carts">
+                    <div>
+                        <img src="{{url_for('static', filename='assets/images/GorraOU.jpg')}}" alt="">
+                        <p><span>45</span>$</p>
+                    </div>
+                    <p class="title">Gorra Atleticos</p>
+                    <a href="" data-id="11" class="btn-add-cart">Agregar</a>
+                </div>
             </div>
+         </section>
+         
+         
+
+        
+       
+    
+        <script>
+            function showCart(x){
+                document.getElementById("products-id").style.display = "block";
+            }
+            function closeBtn(){
+                 document.getElementById("products-id").style.display = "none";
+            }
+    
+        </script>
+    
+
+            
          </div>
       </section>
       
-      <!-- jQery -->
-      <script src="js/jquery-3.4.1.min.js"></script>
-      <!-- popper js -->
-      <script src="js/popper.min.js"></script>
-      <!-- bootstrap js -->
-      <script src="js/bootstrap.js"></script>
-      <!-- custom js -->
-      <script src="js/custom.js"></script>
 
-      <script src="{{url_for('static', filename='js/guardar/login.js')}}"></script>
-      <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 {% endblock %}

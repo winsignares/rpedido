@@ -39,7 +39,7 @@ function Guar_Clientes() {
     })
 }
 
-function ingreso() {
+function ingresos() {
   const tipoPersona = document.getElementById('tipoPersonalogin');
   const email = document.getElementById('email').value;
   const password = document.getElementById('pass').value;
@@ -58,11 +58,11 @@ function ingreso() {
       } else {
         alert('Inicio de sesión incorrecto');
       }
-    })
+  })
     .catch((error) => {
       console.error(error);
       alert('Ocurrió un error en la solicitud');
-    });
+      });
 }
 
 
